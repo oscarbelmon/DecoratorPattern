@@ -21,8 +21,9 @@ public class FamiliarTest {
     }
 
     @Test
-    public void testUtilitario() {
-        Vehiculo vehiculo = new Utilitario(15000);
+    public void testFamiliar2() {
+        Vehiculo vehiculo = new Familiar(1500);
+        // Error flagrante
         assertThat(vehiculo.getPrecio(), is(15000.0));
     }
 }
