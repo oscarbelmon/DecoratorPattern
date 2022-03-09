@@ -19,4 +19,10 @@ public class FamiliarTest {
         assertTrue(vehiculo.descripcion().contains("acondicionado"));
         assertTrue(vehiculo.descripcion().contains("solar"));
     }
+
+    @Test
+    public void testUtilitario() {
+        Vehiculo vehiculo = new Utilitario(15000);
+        assertThat(vehiculo.getPrecio(), is(15000.0));
+    }
 }
